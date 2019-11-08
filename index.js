@@ -5,3 +5,5 @@ app.get("/test", (req, res) => res.send("Hello stranger!"));
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
 const db = require("./db");
+
+const model = require("./image/model");
