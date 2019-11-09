@@ -14,6 +14,12 @@ app.use(parserMiddleware);
 const imageRouter = require("./image/router");
 app.use(imageRouter);
 
+const loginRouter = require("./auth/router");
+app.use(loginRouter);
+
+const usesrRouter = require("./user/router");
+app.use(usesrRouter);
+
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
 const db = require("./db");
